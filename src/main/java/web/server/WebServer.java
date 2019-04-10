@@ -14,7 +14,7 @@ public class WebServer {
 
         port(8080);
 
-        post("/posttest", new Route() {
+        get("/posttest", new Route() {
             @Override
             public Object handle(Request request, Response response) throws Exception {
                 String name = request.queryParams("name");
